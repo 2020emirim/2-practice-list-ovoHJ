@@ -15,5 +15,5 @@ class BookmarkCreateView(CreateView):  # bookmark_form.html
     template_name_suffix = '_create'  # bookmark_create.html
     success_url = reverse_lazy('bookmark:list')  # == {% 'bookmark:list' %}
 
-class BookmarkCreateView(DetailView):
+class BookmarkDetailView(DetailView):
     model = Bookmark
